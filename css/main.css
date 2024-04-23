@@ -1,0 +1,768 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.exo-2-uniquifier {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.exo-2-uniquifier {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 360px) {
+  .container {
+    max-width: 360px;
+    padding: 0px 20px;
+    margin: 0 auto;
+  }
+  .container .header-content {
+    padding-top: 75px;
+  }
+  .container .header-content .headertop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+  .container .header-content .headertop .header-theme {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+  }
+  .container .header-content .headertop .header-theme h2 {
+    font-family: Exo 2;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: left;
+    color: #363738;
+  }
+  .container .header-content .headertop .header-theme p {
+    width: 344px;
+    font-family: PT Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    text-align: left;
+    color: #363738;
+  }
+  .container .header-content .headertop .header-theme h3 {
+    height: 26px;
+    color: #000;
+    font-family: "PT Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    border-bottom: 2px solid yellow;
+  }
+  .container .header-content .headerbottom {
+    padding-top: 56px;
+  }
+  .container .header-content .headerbottom .headerbottom-cards {
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+    padding: 24px 0px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 24px;
+  }
+  .container .header-content .headerbottom .headerbottom-cards .headerbottom-card {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+  .container .header-content .headerbottom .headerbottom-cards .headerbottom-card h3 {
+    color: var(--main-font, #363738);
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135%; /* 24.3px */
+  }
+  .container .header-content .headerbottom .headerbottom-cards .headerbottom-card p {
+    color: var(--additional-font, #6b6b6c);
+    font-family: "PT Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 22.5px */
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0px 40px;
+    margin: 0 auto;
+  }
+  .container .header-content {
+    padding-top: 117px;
+  }
+  .container .header-content .headertop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 73px;
+  }
+  .container .header-content .headertop .header-theme {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+  .container .header-content .headertop .header-theme h2 {
+    width: 690px;
+    font-family: Exo 2;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 55px;
+    text-align: left;
+    color: #363738;
+  }
+  .container .header-content .headertop .header-theme p {
+    width: 600px;
+    font-family: PT Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.5px;
+    text-align: left;
+    color: #363738;
+  }
+  .container .header-content .headertop .header-theme h3 {
+    height: 26px;
+    color: #000;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    border-bottom: 2px solid yellow;
+  }
+  .container .header-content .headertop .header-image {
+    width: 690px;
+    height: 314px;
+    background-image: url(../../images/header2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container .header-content .headertop .header-image .header1 {
+    display: none;
+  }
+  .container .header-content .headerbottom {
+    padding-top: 56px;
+  }
+  .container .header-content .headerbottom .headerbottom-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: none;
+  }
+  .container .header-content .headerbottom .headerbottom-cards .headerbottom-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 32px;
+    width: 690px;
+    padding-left: 32px;
+    padding-right: 140px;
+  }
+  .container .header-content .headerbottom .headerbottom-cards .headerbottom-card .headerbottom-card-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .container .header-content .headerbottom .headerbottom-cards .headerbottom-card .headerbottom-card-text h3 {
+    color: var(--main-font, #363738);
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135%; /* 24.3px */
+  }
+  .container .header-content .headerbottom .headerbottom-cards .headerbottom-card .headerbottom-card-text p {
+    color: var(--additional-font, #6b6b6c);
+    font-family: "PT Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 22.5px */
+  }
+}
+@media screen and (min-width: 360px) {
+  .container {
+    max-width: 360px;
+    padding: 0px 20px;
+    margin: 0 auto;
+  }
+  .container .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 72px;
+    padding-top: 57px;
+  }
+  .container .hero-content .hero-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 48px;
+  }
+  .container .hero-content .hero-top .hero-theme h2 {
+    color: var(--main-font, #363738);
+    font-family: "Exo 2";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 35px */
+  }
+  .container .hero-content .hero-top .hero-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 38px;
+  }
+  .container .hero-content .hero-top .hero-icons .hero-icon {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .container .hero-content .hero-top .hero-icons .hero-icon .hero-icon-text h3 {
+    color: var(--main-font, #363738);
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135%; /* 24.3px */
+  }
+  .container .hero-content .hero-top .hero-icons .hero-icon .hero-icon-text p {
+    color: var(--additional-font, #6b6b6c);
+    font-family: "PT Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 22.5px */
+  }
+  .container .hero-content .hero-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 120px;
+  }
+  .container .hero-content .hero-bottom .hero-bottom-theme {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .container .hero-content .hero-bottom .hero-bottom-theme h2 {
+    color: var(--main-font, #363738);
+    font-family: "Exo 2";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 35px */
+  }
+  .container .hero-content .hero-bottom .hero-bottom-theme p {
+    color: var(--additional-font, #6b6b6c);
+    font-family: "PT Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 22.5px */
+  }
+  .container .hero-content .hero-bottom .hero-bottom-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 24px;
+    border-radius: 10px;
+    background: var(--white, #fff);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+  }
+  .container .hero-content .hero-bottom .hero-bottom-card h3 {
+    padding-left: 24px;
+    color: var(--main-font, #363738);
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135%; /* 24.3px */
+  }
+  .container .hero-content .hero-bottom .hero-bottom-card p {
+    padding-left: 24px;
+    color: var(--additional-font, #6b6b6c);
+    font-family: "PT Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 22.5px */
+  }
+  .container .hero-content .hero-bottom .hero-bottom-card h4 {
+    margin-left: 24px;
+    width: 92px;
+    height: 26px;
+    color: var(--main-font, #363738);
+    font-family: "Exo 2";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135%; /* 20.25px */
+    border-bottom: 2px solid yellow;
+  }
+}
+@media screen and (min-width: 360px) {
+  main .client .container {
+    background-color: #0b7572;
+    max-width: 360px;
+    padding: 0px 20px;
+    margin: 0 auto;
+  }
+  main .client .container .client-content {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    height: 640px;
+  }
+  main .client .container .client-content h2 {
+    padding-top: 32px;
+    font-family: Exo 2;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: left;
+    color: #fff;
+  }
+  main .client .container .client-content .client-content-theme {
+    margin-top: 40px;
+    display: flex;
+    padding: 22px 15px;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+    background-color: #fff;
+  }
+  main .client .container .client-content .client-content-theme h3 {
+    margin-top: 24px;
+    font-family: Exo 2;
+    font-size: 15px;
+    font-weight: 600;
+    width: 313px;
+    line-height: 35px;
+    padding-left: 16px;
+    color: white;
+    background-color: #0b7572;
+    text-align: left;
+  }
+  main .step {
+    padding-top: 64px;
+  }
+  main .step .container .step-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  main .step .container .step-content .step-theme {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  main .step .container .step-content .step-theme h2 {
+    font-family: Exo 2;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: left;
+    color: #363738;
+  }
+  main .step .container .step-content .step-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 30px;
+  }
+  main .step .container .step-content .step-cards .step-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 338px;
+    height: 176px;
+    gap: 16px;
+    border-radius: 10px;
+    background: var(--white, #fff);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+  }
+  main .step .container .step-content .step-cards .step-card h3 {
+    padding-left: 47px;
+    font-family: Exo 2;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.5px;
+    text-align: left;
+    color: #363738;
+  }
+  main .step .container .step-content .step-cards .step-card p {
+    padding-left: 47px;
+    font-family: PT Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    text-align: left;
+    color: #6b6b6c;
+  }
+  main .sponsor .container .sponsor-content .brend-content {
+    margin-top: 64px;
+  }
+  main .sponsor .container .sponsor-content .brend-content .brend-theme h2 {
+    color: var(--main-font, #363738);
+    font-family: "Exo 2";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 35px */
+  }
+  main .sponsor .container .sponsor-content .brend-content .brend-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  main .sponsor .container .sponsor-content .brend-content .brend-cards .brend-card {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    width: 160px;
+    height: 176px;
+    margin-top: 50px;
+    box-shadow: 0.2px 0px 0.4px 0px;
+  }
+  main .sponsor .container .sponsor-content .brend-content .brend-cards .brend-card h3 {
+    padding-top: 18px;
+    color: var(--main-font, #363738);
+    text-align: center;
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135%; /* 24.3px */
+  }
+  main .sponsor .container .sponsor-content .brend-content .brend-cards p {
+    padding-top: 9px;
+    color: var(--additional-font, #6b6b6c);
+    text-align: center;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%; /* 18.9px */
+  }
+  main .sponsor .container .sponsor-content .workers-content {
+    margin-top: 132px;
+  }
+  main .sponsor .container .sponsor-content .workers-content .workers-theme h2 {
+    color: #363738;
+    font-family: "Exo 2";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 35px */
+  }
+  main .sponsor .container .sponsor-content .workers-content .workers-cards {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  main .sponsor .container .sponsor-content .workers-content .workers-cards .workers-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 345px;
+    height: 156px;
+    flex-shrink: 0;
+    border-left: 20px solid #0b7572;
+    border-radius: 10px;
+    background: var(--white, #fff);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+  main .sponsor .container .sponsor-content .workers-content .workers-cards .workers-card .w-card-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+  }
+  main .sponsor .container .sponsor-content .workers-content .workers-cards .workers-card .w-card-text h3 {
+    color: #363738;
+    font-family: "Exo 2";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  main .sponsor .container .sponsor-content .workers-content .workers-cards .workers-card .w-card-text p {
+    color: #6b6b6c;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+  }
+  main .sponsor .container .sponsor-content .workers-content .workers-cards .workers-card .w-card-text h4 {
+    width: 86px;
+    height: 3px;
+    background: #ffce50;
+  }
+  main .sponsor .container .sponsor-content .workers-content .workers-cards .workers-card .w-card-text .w-card-text-img {
+    display: flex;
+    gap: 20px;
+  }
+  main .contact .container .contact-content {
+    margin-top: 116px;
+  }
+  main .contact .container .contact-content .contact-theme {
+    padding-bottom: 56px;
+  }
+  main .contact .container .contact-content .contact-theme h2 {
+    color: var(--main-font, #363738);
+    font-family: "Exo 2";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 35px */
+  }
+  main .contact .container .contact-content .contact-texts {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    margin-bottom: 50px;
+    gap: 40px;
+    width: 344px;
+    height: 65px;
+  }
+  main .contact .container .contact-content .contact-texts .contact-texts-image {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  main .contact .container .contact-content .contact-texts .contact-texts-num {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: left;
+    gap: 12px;
+  }
+  main .contact .container .contact-content .contact-texts .contact-texts-num p {
+    color: var(--additional-font, #6b6b6c);
+    font-family: "PT Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 22.5px */
+  }
+  main .contact .container .contact-content .contact-texts .contact-texts-num h3 {
+    color: var(--main-font, #363738);
+    font-family: "Exo 2";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  main .contact .container .form-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  main .contact .container .form-content .form-texts {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 297px;
+    height: auto;
+    flex-shrink: 0;
+    background-color: #f9f9fb;
+    gap: 14px;
+    padding: 24px 0;
+    padding-left: 24px;
+    border-bottom: 1px solid #e9eaf2;
+  }
+  main .contact .container .form-content .form-texts p {
+    color: var(--additional-font, #6b6b6c);
+    font-family: "PT Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 18.75px */
+  }
+  main .contact .container .form-content .form-texts h3 {
+    color: var(--main-font, #363738);
+    font-family: "Exo 2";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 20px */
+  }
+  main .contact .container .form-image {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 360px) {
+  footer .footer .container {
+    background-color: #0b7572;
+  }
+  footer .footer .container .footer-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+  footer .footer .container .footer-content .footer-logo {
+    margin-top: 20px;
+  }
+  footer .footer .container .footer-content .footer-texts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+  }
+  footer .footer .container .footer-content .footer-texts .footer-texts1 p {
+    padding-bottom: 30px;
+    color: #fff;
+    font-family: "Exo 2";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 12px */
+    letter-spacing: 1.28px;
+    text-transform: capitalize;
+  }
+  footer .footer .container .footer-content .footer-texts .footer-texts1 .footer-texts1-image {
+    display: flex;
+    gap: 15px;
+  }
+  footer .footer .container .footer-content .footer-texts .footer-texts1 h3 {
+    padding-top: 20px;
+    color: #fff;
+    font-family: "Exo 2";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 12px */
+    text-transform: uppercase;
+  }
+  footer .footer .container .footer-content .footer-texts .footer-texts2 p {
+    padding-bottom: 30px;
+    color: #fff;
+    font-family: "Exo 2";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 12px */
+    letter-spacing: 1.28px;
+    text-transform: capitalize;
+  }
+  footer .footer .container .footer-content .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .footer .container .footer-content .footer-bottom .footer-bottom1 {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 294px;
+    height: 44px;
+    gap: 20px;
+    flex-shrink: 0;
+    background-color: #ff9619;
+  }
+  footer .footer .container .footer-content .footer-bottom .footer-bottom1 h3 {
+    color: #fff;
+    font-family: "Exo 2";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 15px */
+    text-transform: uppercase;
+  }
+  footer .footer .container .footer-content .footer-bottom .footer-bottom2 {
+    padding-bottom: 30px;
+  }
+  footer .footer .container .footer-content .footer-bottom .footer-bottom2 h3 {
+    color: #fff;
+    text-align: center;
+    font-family: "Exo 2";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px; /* 15px */
+    letter-spacing: 1.6px;
+    text-transform: capitalize;
+  }
+}/*# sourceMappingURL=main.css.map */
