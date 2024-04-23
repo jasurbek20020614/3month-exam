@@ -59,8 +59,9 @@
           row-gap: 24px;
           .headerbottom-card {
             display: grid;
+            padding-left: 32px;
             grid-template-rows: repeat(2, 1fr);
-            column-gap: 16px;
+            column-gap: 15px;
 
             h3 {
               color: var(--main-font, #363738);
@@ -71,6 +72,7 @@
               line-height: 135%; /* 24.3px */
             }
             p {
+              padding-top: 15px;
               color: var(--additional-font, #6b6b6c);
               font-family: "PT Sans";
               font-size: 15px;
@@ -155,8 +157,14 @@
             display: flex;
             align-items: flex-start;
             justify-content: left;
+            border-radius: 20px;
+            background: #fff;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
             gap: 32px;
             width: 690px;
+            height: auto;
+            padding-top: 35px;
+            padding-bottom: 35px;
             padding-left: 32px;
             padding-right: 140px;
             .headerbottom-card-text {
@@ -164,6 +172,7 @@
               align-items: flex-start;
               justify-content: center;
               flex-direction: column;
+
               gap: 20px;
               h3 {
                 color: var(--main-font, #363738);
@@ -174,6 +183,116 @@
                 line-height: 135%; /* 24.3px */
               }
               p {
+                padding: 0;
+                color: var(--additional-font, #6b6b6c);
+                font-family: "PT Sans";
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%; /* 22.5px */
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0px 100px;
+    margin: 0 auto;
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 auto;
+      padding-top: 117px;
+      .headertop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .header-theme {
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          justify-content: center;
+          gap: 50px;
+          h2 {
+            font-family: Exo 2;
+            font-size: 52px;
+            width: 610px;
+            height: 119px;
+            flex-shrink: 0;
+          }
+          p {
+            width: 525px;
+            height: 66px;
+            flex-shrink: 0;
+            font-family: PT Sans;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24.5px;
+            text-align: left;
+            color: #363738;
+          }
+          h3 {
+            height: 26px;
+            color: #000;
+            font-family: "PT Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            border-bottom: 2px solid yellow;
+          }
+        }
+        .header-image {
+          width: 635px;
+          height: 505px;
+          background-image: url(../../images/header3.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          .header1 {
+            display: none;
+          }
+        }
+      }
+      .headerbottom {
+        padding-top: 56px;
+        .headerbottom-cards {
+          width: 1240px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+
+          .headerbottom-card {
+            display: flex;
+            align-items: flex-start;
+            justify-content: left;
+            border-radius: 20px;
+            background: #fff;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+            height: 300px;
+            .headerbottom-card-text {
+              display: flex;
+              align-items: flex-start;
+              justify-content: center;
+              flex-direction: column;
+
+              gap: 20px;
+              h3 {
+                color: var(--main-font, #363738);
+                font-family: "Exo 2";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 135%; /* 24.3px */
+              }
+              p {
+                padding: 0;
                 color: var(--additional-font, #6b6b6c);
                 font-family: "PT Sans";
                 font-size: 15px;

@@ -134,3 +134,74 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .hero-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    gap: 20px;
+    .hero-icon {
+      width: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // flex-direction: column;
+      gap: 16px;
+      .hero-icon-text {
+        h3 {
+          color: var(--main-font, #363738);
+          font-family: "Exo 2";
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 135%; /* 24.3px */
+        }
+        p {
+          color: var(--additional-font, #6b6b6c);
+          font-family: "PT Sans";
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 22.5px */
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0px 100px;
+    margin: 0 auto;
+  }
+
+  .hero-icons {
+    display: flex;
+    flex-wrap: wrap;
+    .hero-icon {
+      display: grid;
+      width: 400px;
+      .hero-icon-text {
+        h3 {
+          color: var(--main-font, #363738);
+          font-family: "Exo 2";
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 135%; /* 24.3px */
+        }
+        p {
+          color: var(--additional-font, #6b6b6c);
+          font-family: "PT Sans";
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 22.5px */
+        }
+      }
+    }
+  }
+}
